@@ -8,24 +8,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"rel="stylesheet">
     <style>
         body{
-            margin: 0px;
+            margin: 0;
             font-family: 'Open Sans', sans-serif;
         }
         .top_bar{
-            background-color: aqua;
+            background-color: rgba(204, 197, 197, 0.84);
 
         }
         .top_bar_content{
-            width: 800px;
+            max-width: 1100px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
         }
-        .top_bar__menu{
-            background-color: blue;
-        }
+        .top_bar__menu,
         .top_bar_social-media{
-            background-color: brown;
-            margin: 0 auto;
+            height: 50px;
+            display: flex;
+            align-items: center;
+
         }
+        .top_bar__menu span{
+            width: 80px;
+            font-size: 11px;
+            color: #444444;
+            transition: color 0.5s;
+
+        }
+        .top_bar__menu span:hover {
+            color: #b33131;
+            cursor: pointer;
+        }
+        .top_bar_social-media i {
+            width: 25px;
+        }
+        .top_bar_social-media i:hover {
+            color: red;
+            cursor: pointer;
+        }
+        .top-bar-search{
+            
+       }
+       .hilary-logo{
+           text-align: center;
+           padding: 35px;
+       }
+       .nav-bar{
+           font-size: 13px;
+           color: rgba(0, 0, 0, .85);
+           display: flex;
+           flex-direction: row;
+           border-top: 1px solid #efefef;
+           border-bottom: 1px solid #efefef;
+           padding: 16px 0;
+           max-width: 1100px;
+           margin: 0 auto;
+       }
+       .nav-bar__menu span{
+           letter-spacing: 2px;
+           padding: 0 16px;
+           border-left: 1px solid lightgray;
+
+       }
+      
+
 
     </style>
 </head>
@@ -45,9 +93,27 @@
         <i class="fa fa-instagram"></i>
         <i class="fa fa-youtube"></i>
         <i class="fa fa-whatsapp"></i>
-
+        <div class="top-bar-search">
+            <i class="fa fa-search"></i>
+            <i>Search...</i> 
+        </div>
     </div>
     </div>
     </div>
+<div class="hilary-logo">
+    <img src="Logo.png" alt="">
+</div>
+<div class="nav-bar">
+    <div class="nav-bar__menu">
+        <span>HOME</span>
+        <span>FEATURES</span>
+        <span>BLOG</span>
+        <span>D.I.Y</span>
+        <span>HANDMADE</span>
+        <span>AUTHORS</span>
+        <span>SHOP</span>
+    </div>
+    
+</div>
 </body>
-</html>
+</html>  
