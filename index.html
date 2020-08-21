@@ -16,7 +16,7 @@
 
         }
         .top_bar_content{
-            max-width: 1100px;
+            max-width: 800px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -49,8 +49,22 @@
             cursor: pointer;
         }
         .top-bar-search{
+            position: absolute;
+            right: 0;
+            top: 17px;
+            color: rgba(0, 0, 0, .85);
+            font-size: 13px;
+            font-weight: bold;
+            border-left: 1px solid darkolivegreen;
+            padding-left: 10px;
+
+            font-family: 'Open Sans',sans-serif;
+            line-height: 22px;
+           
+
             
        }
+
        .hilary-logo{
            text-align: center;
            padding: 35px;
@@ -58,19 +72,21 @@
        .nav-bar{
            font-size: 13px;
            color: rgba(0, 0, 0, .85);
-           display: flex;
-           flex-direction: row;
            border-top: 1px solid #efefef;
            border-bottom: 1px solid #efefef;
-           padding: 16px 0;
-           max-width: 1100px;
+           padding: 20px 0;
+       }
+       .nav-bar__menu{
+           max-width: 800px;
            margin: 0 auto;
        }
        .nav-bar__menu span{
            letter-spacing: 2px;
            padding: 0 16px;
-           border-left: 1px solid lightgray;
-
+       }
+       .nav-bar__menu samp:hover{
+           cursor: pointer;
+           
        }
       
 
@@ -95,9 +111,10 @@
         <i class="fa fa-whatsapp"></i>
         <div class="top-bar-search">
             <i class="fa fa-search"></i>
-            <i>Search...</i> 
+            <input type="text" size="15" maxlength="30" value="" name="Search">
         </div>
     </div>
+    
     </div>
     </div>
 <div class="hilary-logo">
